@@ -1,6 +1,11 @@
 const itemsContainer = document.getElementById('items')
 import data from './data.js'
 
+const itemList = document.getElementById('item-list')
+console.log(itemList)
+itemList.innerHTML = '<li> Hello World</li>'
+
+
 // the length of our data determines how many times this loop goes around
 for (let i=0; i<data.length; ++i) {
     let newDiv = document.createElement('div');
